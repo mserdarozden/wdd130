@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+  }
+
+:root {
+    --primary-color: #0081a7;
+    --secondary-color: #00afb9;
+    --accent1-color: #f07167;
+    --accent2-color: #fdfcdc;
+  
+    --heading-font: "Playfair Display", serif;
+    --paragraph-font: "Alice", serif;
+  
+    --nav-background-color: #0081a7;
+    --nav-link-color: #00afb9;
+    --nav-hover-link-color: #f07167;
+    --nav-hover-background-color: #fdfcdc;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+  }
+
+  header {
+    padding: 20px;
+    background-color: var(--primary-color);
+  }
+
+  p {
+    padding: 25px;
+  }
+  
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+  }
+  
+  nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+  nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+  }
+  
+  nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
