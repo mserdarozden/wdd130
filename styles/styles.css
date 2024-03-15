@@ -33,6 +33,11 @@ p {
     padding: 0;
 }
 
+main img {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
 aside {
     width: 20rem;
     margin: 1rem;
