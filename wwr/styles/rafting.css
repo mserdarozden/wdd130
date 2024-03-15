@@ -6,7 +6,7 @@ body {
     padding: 20px;
   }
 
-  :root {
+:root {
     --primary-color: #ffffff;
     --secondary-color: #00afb9;
     --accent1-color: #f07167;
@@ -21,39 +21,88 @@ body {
     --nav-hover-background-color: #fdfcdc;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
   }
 
-  header {
+header {
     padding: 20px;
     background-color: var(--primary-color);
   }
 
-  p {
-    padding: 25px;
-  }
-  
-
-nav {
+header nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
   }
-  
-  nav a {
+
+header nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
   }
   
-  nav a:link, nav a:visited {
+header nav a:link, nav a:visited {
     color: var(--nav-link-color);
   }
-  
-  nav a:hover {
+
+header nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
   }
+
+/* Class Selectors */
+.hero {
+    position: relative;
+    padding: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    background-color: lightgray;
+    opacity: 0.8;
+    height: 50px;
+    padding: 10px 0;
+}
+
+.hero article {
+    position: absolute;
+    top: 180px;
+    left: 45px;
+    right: 45px;
+    padding: 10px;
+    text-align: left;
+    background-color: var(--accent2-color);
+    opacity: 0.8;
+    border-radius: 12px;
+}
+
+.hero article img {
+    width: 200px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 40px 30px 0 0; 
+    
+}
+
+.sociallinks img {
+    float: left;
+    width: 5%;
+    height: auto;
+    padding: 5px;
+}
