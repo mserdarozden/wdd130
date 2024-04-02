@@ -17,8 +17,8 @@ body {
   
     --nav-background-color: #bbe8f3;
     --nav-link-color: #24378b;
-    --nav-hover-link-color: #f07167;
-    --nav-hover-background-color: #34363b;
+    --nav-hover-link-color: #4f4e8a;
+    --nav-hover-background-color: #7da9ce;
   }
 
 
@@ -26,6 +26,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
+    text-align: center;
   }
 
 /* Class Selectors */
@@ -213,5 +214,161 @@ header nav a:hover {
   width: 20%;
   height: auto;
   padding-left: 10px;
+
+}
+
+.grid-container-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  align-items: center;
+  place-items: center;
+  margin: 1rem;
+}
+
+.adress {
+  grid-row: 2/3;
+  grid-column: 2;
+  margin-left: 2rem;
+}
+
+.map {
+  grid-column: 1;
+  grid-row: 1/4;
+
+}
+
+.district {
+  align-self:last baseline;
+}
+
+.grid-container-happy-client {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  place-items: center;
+
+}
+.grid-item-happy-client img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+}
+
+.grid-item-happy-client {
+  margin: 10px;
+  overflow: hidden;
+}
+
+figcaption {
+  text-align: center;
+}
+
+section {
+  max-width: 920px; /* Maximum width of the form section */
+  margin: 0 auto; /* Center the section */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light grey background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Grid container and item styles */
+.grid-container-form {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout */
+  gap: 20px; /* Space between grid items */
+}
+
+.grid-item-form-name, .grid-item-form-surname, .grid-item-form-purpose, .grid-item-form-feedback, .grid-item-form-subscribe {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+}
+
+label {
+  font-weight: bold; /* Make labels bold */
+  margin-bottom: 5px; /* Space below the label */
+}
+
+.grid-container-form p {
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+  margin-bottom: 1rem;
+  padding: 10px; /* Padding inside the input fields */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Slightly larger font size for readability */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; /* Change mouse cursor to indicate it's clickable */
+  font-size: 16px;
+  margin-top: 10px; /* Add some space above the button */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.grid-item-form-purpose {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 2rem;
+  justify-items: start;
+  gap: 10px;
+}
+
+.radio-input1 {
+  grid-row: 1;
+  grid-column: 2;
+}
+.radio-label1 {
+  grid-row: 1;
+  grid-column: 1;
+ 
+}
+.radio-input2 {
+  grid-row: 2;
+  grid-column: 2;
+}
+.radio-label2 {
+  grid-row: 2;
+  grid-column: 1;
+}
+.radio-input3 {
+  grid-row: 3;
+  grid-column: 2;
+}
+.radio-label3 {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.grid-item-form-purpose label{
+  font-weight: normal;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.grid-item-form-subscribe {
+  display: grid; /* Enables Flexbox */
+  grid-template-columns: 50% 25% 25%;
+  justify-items: start;
+  gap: 10px; /* Adds space between the label and the checkbox */
+}
+
+p{
 
 }

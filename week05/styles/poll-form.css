@@ -110,8 +110,3 @@ input, select, textarea {
 .column2 {
     grid-template-columns: 1fr 2fr;
 }
-
-button {
-  margin-left: 15rem;
-  margin-right: 15rem;
-}
