@@ -288,17 +288,18 @@ textarea {
 
 button[type="submit"] {
   padding: 10px 20px;
-  background-color: #007bff; 
+  background-color: #FF5722; 
   color: white; 
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer; 
   font-size: 16px;
   margin-top: 10px; 
+  font-weight: bold; 
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3; 
+  background-color: #E64A19; 
 }
 
 .grid-item-form-purpose {
